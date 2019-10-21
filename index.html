@@ -32,10 +32,24 @@ audio {
 </head>
 <body>
     <h2>Audio samples: End-to-end voice conversion via cross-modal knowledge distillation for dysarthric speech reconstruction</h2>
+    <p><strong>Authors: </strong> Disong Wang, Jianwei Liu, Xinxi Wu, Songxiang Liu, Lifa Sun, Xunying Liu and Helen Meng</p>
+    <p><strong>Abstract: </strong> Dysarthric speech reconstruction is a challenging task due to difficulties to repair unstable prosody and correct imprecise articulation. Inspired by the success of sequence-to-sequence (seq2seq) based text-to-speech (TTS) synthesis and knowledge distillation techniques, this paper proposes a novel end-to-end voice conversion (VC) method to tackle this task. Specifically, a seq2seq based TTS is first trained to generate normal speech. Then the cross-modal knowledge of TTS text-encoder is transferred to a speech-encoder, which is used to produce effective linguistic representations from the dysarthric speech. At the conversion phase, the speech-encoder can be concatenated with the attention and decoder modules of TTS system to directly map the dysarthric speech to its normal version.  Experiments show that the proposed method can generate the speech of high naturalness and intelligibility, with 35.35% and 48.65% absolute word error rate (WER) reduction for speakers with low and very low speech intelligibility, respectively.
+
+  <hr>
+
+    <h2>System Comparison</h2>
+    <p><strong>Original:</strong> Original dysarthric speech.</p>
+    <p><strong>JDNMF:</strong> Joint Dictionary learning Non-negative Matrix Factorization based VC.</p>
+    <p><strong>DBLSTM:</strong> Deep Bidirectional Long-Short Term Memory based VC.</p>
+    <p><strong>ASR-TTS:</strong> Employ the ASR to obatain the dysarthric speech recognition results, which are used as the inputs of the TTS to synthesize normal speech.</p>
+    <p><strong>Proposed:</strong> Proposed dysarthric speech reconstruction system.</p>
+
   <ul>
     <li>Speaker-dependent dysarthric speech reconstruction system is trained for each dysarthric speaker.</li>
     <li>UASpeech dataset is used for experiments. 4 dysarthric speakers from 4 groups with different speech intelligibility are used for experiments: F05(high), M05(mid), M07(low), F03(very low). 'F' and 'M' denote female and male respectively.</li>
   </ul>
+
+  <hr>
 
     <h3>Dysarthric speech reconstruction for different speakers</h3>
 
