@@ -16,14 +16,14 @@ audio {
 </style>
 </head>
 <body>
-    <h1>Audio samples: End-to-end voice conversion via cross-modal knowledge distillation for dysarthric speech reconstruction</h1>
+    <h2>Audio samples: End-to-end voice conversion via cross-modal knowledge distillation for dysarthric speech reconstruction</h2>
     <p><strong>Authors: </strong> Disong Wang, Jianwei Yu, Xixin Wu, Songxiang Liu, Lifa Sun, Xunying Liu and Helen Meng</p>
     <!--<p><strong>Abstract: </strong> Dysarthric speech reconstruction (DSR) is a challenging task due to difficulties to repair unstable prosody and correct imprecise articulation. Inspired by the success of sequence-to-sequence (seq2seq) based text-to-speech (TTS) synthesis and knowledge distillation (KD) techniques, this paper proposes a novel end-to-end voice conversion (VC) method to tackle the reconstruction task. The proposed approach consists of three components. First, a seq2seq based TTS is first trained with the transcribed normal speech. Second, guided by the text-encoder of this trained TTS system, a teacher-student framework is proposed for cross-modal knowledge distillation (KD) by training a speech-encoder to extract appropriate linguistic representations from the transcribed dysarthric speech.  Third, the speech-encoder of the previous component is concatenated with the attention and decoder of the first component (TTS) to perform the DSR task, by directly mapping the dysarthric speech to its normal version.  Experiments demonstrate that the proposed method can generate the speech with high naturalness and intelligibility, where the comparison of human speech recognition between the reconstructed speech and the original dysarthric speech show that 35.4% and 48.7% absolute word error rate (WER) reduction can be achieved for dysarthric speakers with low and very low speech intelligibility, respectively.
 -->
   
   <hr>
 
-    <h2>System Comparison</h2>
+    <h3>System comparison</h3>
     <li><strong>Original:</strong> Original dysarthric speech.</li>
     <li><strong>JDNMF:</strong> Joint Dictionary learning Non-negative Matrix Factorization based VC.</li>
     <li><strong>DBLSTM:</strong> Deep Bidirectional Long-Short Term Memory based VC.</li>
@@ -32,13 +32,13 @@ audio {
 
   <hr>
   
-    <h2>Some additional observations and analysis</h2>
+    <h3>Some additional observations and analysis</h3>
     <li><strong>(1)</strong> The proposed method can effectively remove incorrect articulation repetitions, e.g., M05 speaker said 'whiskey key' for 'whiskey' and 'ab ablutions' for 'ablutions', the reconstructed speech has the correct articulations 'whiskey' and 'ablutions', please listen to M05-No.2 and M05-No.4 for more details.</li>
     <li><strong>(2)</strong> Compared with the ASR-TTS, the proposed method preserves more similiar content with the original speech, please listen to M07-No.8, M07-No.10, F03-No.5 and F03-No.9 for more details. For ASR-TTS, when the ASR results are wrong, the TTS generates the speech with totally wrong content. However, the proposed method can extract and use the apropriate linguistic representations to generate the speech with more original content preservations, thus the recontructed speech sounds more like original content.</li>
   
   <hr>
 
-    <h2>Dysarthric speech reconstruction for different speakers</h2>
+    <h3>Dysarthric speech reconstruction for different speakers</h3>
     <li>4 dysarthric speakers from 4 groups with different speech intelligibility are used for experiments: F05(high), M05(mid), M07(low), F03(very low). 'F' and 'M' denote female and male respectively.</li>
     <li>The proposed method can be extended to other conversion task, such as speaker identity, emotion, speaking style and accent conversion, etc. </li> 
     <li>By replacing the proposed single-speaker TTS with multi-speaker TTS, the proposed system can generate the high-quality speech that preserves both speaker identity and content, which is our future work.</li>
